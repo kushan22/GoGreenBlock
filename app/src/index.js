@@ -3,6 +3,7 @@ import metaCoinArtifact from "../../build/contracts/CarbonContract.json";
 
 
 import IndiaImage from "../images/indiaFlag.png";
+import gogBlockchain from"../images/gogBlockchain.png"
 
 
 const App = {
@@ -84,6 +85,7 @@ window.addEventListener("load", function() {
   var image4 = document.getElementById("image4");
   var image5 = document.getElementById("image5");
   var image6 = document.getElementById("image6");
+  var image7 = document.getElementById("image7");
 
   image1.src = IndiaImage;
   image2.src = IndiaImage;
@@ -91,6 +93,7 @@ window.addEventListener("load", function() {
   image4.src = IndiaImage;
   image5.src = IndiaImage;
   image6.src = IndiaImage;
+  image7.src = gogBlockchain;
   
 
 
