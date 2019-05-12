@@ -11,12 +11,9 @@
   <style >
   
     .header{
-      background-color: #BFBFBF;
-      width: 100%;
-      height: 350px;
-      background-size:  cover; 
-      background-repeat:   no-repeat;
-      background-position: center center;
+     
+      position: relative;
+      z-index: 2;
     }
     .carbon-token-box{
       width: 284px;
@@ -37,6 +34,21 @@
   
     .disp-inline {
       display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .img_class {
+      top: 0;
+      left: 0;
+      position: absolute;
+      
+    }
+
+    .randomtext{
+      z-index: 1;
+     
+     
     }
   </style>
   </head>
@@ -44,20 +56,26 @@
   <body>
 
       <div class="container text-center">
-          <div class="header">
-            <div class="disp-inline">
-              <img id="image1" width="50px"/>
-              <img id="image2" width="50px"/>
-              <img id="image3" width="50px"/>
+          <div class="header" >
+              <div class="disp-inline">
+                  <img id="image4" width="50px"/>
+                  <img id="image5" width="50px"/>
+                  <img id="image6" width="50px"/>
+              </div>
+              <h2 class="disp-inline randomtext"> Welcome India </h2>
+              
+              <div class="disp-inline">
+                  <img id="image1" width="50px"/>
+                  <img id="image2" width="50px"/>
+                  <img id="image3" width="50px"/>
+                </div>
+
+                <img id = "image7" class="img_class" width="100%"/>
             </div>
-          <h2 class="disp-inline"> Welcome India </h2>
-            <div class="disp-inline">
-                <img id="image4" width="50px"/>
-                <img id="image5" width="50px"/>
-                <img id="image6" width="50px"/>
-            </div>
-          </div>
-          <h3 class=""> Here is your Carbon token collection up until <span id="dispDate"></span></h3>
+           
+            
+         
+          <h3 class="introCarbon" style="margin-top: 30%;"> Here is your Carbon token collection up until <span id="dispDate"></span></h3>
     
           <div class="container text-center carbon-token-box">
             <p class="carbon-token-text">0</p>
