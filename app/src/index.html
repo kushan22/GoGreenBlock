@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Country</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style >
+  
+    .header{
+      background-color: #BFBFBF;
+      width: 100%;
+      height: 350px;
+      background-size:  cover; 
+      background-repeat:   no-repeat;
+      background-position: center center;
+    }
+    .carbon-token-box{
+      width: 284px;
+      height: 78px;
+      padding: 20px 10px 10px 10px;
+      border: 1px solid #BFBFBF;
+      background-color: white;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-weight: 900;
+      font-size: 34px;
+      overflow: hidden;
+    }
+  
+    .carbon-token-text{
+      overflow: scroll;
+    }
+  
+    .disp-inline {
+      display: inline-block;
+    }
+  </style>
+  </head>
+  
+  <body>
+
+      <div class="container text-center">
+          <div class="header">
+            <div class="disp-inline">
+              <img id="image1" width="50px"/>
+              <img id="image2" width="50px"/>
+              <img id="image3" width="50px"/>
+            </div>
+          <h2 class="disp-inline"> Welcome India </h2>
+            <div class="disp-inline">
+                <img id="image4" width="50px"/>
+                <img id="image5" width="50px"/>
+                <img id="image6" width="50px"/>
+            </div>
+          </div>
+          <h3 class=""> Here is your Carbon token collection up until <span id="dispDate"></span></h3>
+    
+          <div class="container text-center carbon-token-box">
+            <p class="carbon-token-text">0</p>
+          </div>
+          <div class="container" >
+              <input type="text" placeholder="Current AQI" id="currentAp"/>
+          </div>
+          <div class="container">
+            <button class="btn btn-primary btn-updateInfo" onclick="App.sendCoin()"> Update information </button>
+          </div>
+         
+         
+          <div id="status">
+            <p>Click to update Transaction</p>
+          </div>
+        </div>
+    
+    
+
+   
+
+   
+   
+
+    
+
+    
+    <script src="index.js"></script>
+  </body>
+</html>
