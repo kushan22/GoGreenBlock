@@ -36,7 +36,7 @@ const App = {
 
   refreshBalance: async function() {
     const { getBalance } = this.meta.methods;
-    const balance = await getBalance("0x6d484e2f75f5669e54bbbded7415e760d16ad019").call();
+    const balance = await getBalance("0x526b52542fff0905844e3bd35cd36f5baf5c1ff6").call();
 
     const balanceElement = document.getElementsByClassName("carbon-token-text")[0];
     balanceElement.innerHTML = balance;
@@ -46,7 +46,7 @@ const App = {
 
   sendCoin: async function() {
     const amount = 10;
-    const receiver =  "0x6d484e2f75f5669e54bbbded7415e760d16ad019";
+    const receiver =  "0x526b52542fff0905844e3bd35cd36f5baf5c1ff6";
     const currentAp = parseInt(document.getElementById("currentAp").value)
     this.setStatus("Initiating transaction... (please wait)");
 
